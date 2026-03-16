@@ -183,7 +183,7 @@ export function *entries(o: object) : IterableIterator<[string, string]>
 {
     for(let k of Object.keys(o) )
     {
-        yield [k, <string>o[k]];
+        yield [k, String((o as any)[k])];
     }
 }
 
@@ -193,7 +193,7 @@ export function to_object(M: Map<string, string>)
 
     for( let [k, v] of M )
     {
-        o[k] = v;
+        (o as any)[k] = v;
     }
 
     return o;

@@ -2,7 +2,7 @@
   "name": "msbuild-tools",
   "displayName": "msbuild Tools",
   "description": "Work with MSBuild projects from inside Visual Studio Code",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "publisher": "sterin",
   "homepage": "https://github.com/sterin/vscode-msbuild-tools/blob/master/README.md",
   "repository": {
@@ -13,7 +13,7 @@
     "url": "https://github.com/sterin/vscode-msbuild-tools/issues"
   },
   "engines": {
-    "vscode": "^1.19.0"
+    "vscode": "^1.86.0"
   },
   "license": "SEE LICENSE IN LICENSE.md",
   "categories": [
@@ -37,7 +37,7 @@
     "onCommand:msbuild-tools.open-visualstudio",
     "workspaceContains:.vscode/msbuild-tools.json"
   ],
-  "main": "./out/src/extension",
+  "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
@@ -108,18 +108,15 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "tsc -p ./",
-    "compile": "tsc -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test"
-  },
+  "compile": "tsc -p ./",
+  "package": "vsce package"
+},
   "devDependencies": {
-    "@types/mocha": "^2.2.48",
-    "@types/node": "^8.5.9",
-    "mocha": "^6.0.2",
-    "typescript": "^2.7.1",
-    "vscode": "^1.1.10"
-  },
+  "@types/node": "^20.11.30",
+  "@types/vscode": "^1.86.0",
+  "typescript": "^5.4.5",
+  "@vscode/vsce": "^3.0.0"
+},
   "extensionDependencies": [
     "ms-vscode.cpptools"
   ],
