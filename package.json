@@ -1,16 +1,16 @@
 {
-  "name": "msbuild-tools",
-  "displayName": "msbuild Tools",
+  "name": "msbuild-tools-for-vscode",
+  "displayName": "msbuild Tools for Visual Studio 1.86 and above",
   "description": "Work with MSBuild projects from inside Visual Studio Code",
-  "version": "0.0.13",
-  "publisher": "sterin",
-  "homepage": "https://github.com/sterin/vscode-msbuild-tools/blob/master/README.md",
+  "version": "1.0.2",
+  "publisher": "KrishnaB",
+  "homepage": "https://github.com/bharathulaprasad/vscode-msbuild-tools/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sterin/vscode-msbuild-tools.git"
+    "url": "https://github.com/bharathulaprasad/vscode-msbuild-tools/vscode-msbuild-tools.git"
   },
   "bugs": {
-    "url": "https://github.com/sterin/vscode-msbuild-tools/issues"
+    "url": "https://github.com/bharathulaprasad/vscode-msbuild-tools/issues"
   },
   "engines": {
     "vscode": "^1.86.0"

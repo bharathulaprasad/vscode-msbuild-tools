@@ -1,8 +1,7 @@
 {
     "solution": "${workspaceRoot}/helloworld.sln",
     "variables": {
-        "MSBUILD": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe",
-        "DEVENV": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/Common7/IDE/devenv.com"
+        "MSBUILD": "C:/program files/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/MSBuild.exe"
     },
     "buildConfigurations": [
         "Debug",
@@ -16,7 +15,7 @@
         {
             "name": "Print a message",
             "program": "cmd",
-            "args": [ "/c", "echo [pre-build task]: MESSAGE" ],
+            "args": [ "/c", "echo [pre-build task]: Build Started" ],
             "cwd": "${workspaceRoot}"
         }
     ],
@@ -24,7 +23,7 @@
         {
             "name": "Print another message",
             "program": "cmd",
-            "args": [ "/c", "echo [post-build task]: ANOTHER MESSAGE" ],
+            "args": [ "/c", "echo [post-build task]: BUILD Finished" ],
             "cwd": "${workspaceRoot}"
         }
     ],
