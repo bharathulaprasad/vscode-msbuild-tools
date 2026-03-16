@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to the "vscode-msbuild-tools" extension will be documented in this file.
 
+
+## 1.0.0.3
+
+- Upgraded for latest VS Code engine 1.86.0 and above
+
+
 ## 0.0.12
 
 - Removed Github Actions badge from README.md because it contains an SVG which is not accepted by the Visual Studio Code marketplace for security reasons.
